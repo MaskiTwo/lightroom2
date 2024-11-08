@@ -21,7 +21,7 @@ To use the Room Light Controller, follow these steps:
    ```
    cd room-light-controller
    ```
-3. Install the required dependencies:
+3. Install the required dependencies: (will do later)
    ```
    pip install -r requirements.txt
    ```
@@ -33,7 +33,8 @@ Here's an example of how to use the Room Light Controller library:
 from modules import udphandle as light
 
 # Create a light instance
-led = light.lightdata(keys.led_ip,keys.port,"main_led") # insert your own ip and port, the "main_led" is just naming and is opsional
+led = light.lightdata(keys.led_ip,keys.port,"main_led") # insert your own ip and port
+# the "main_led" is just naming and is optional
 
 # Display the name, ip, and port of the light instance
 led.lightdata()
@@ -48,7 +49,7 @@ light.lightcolor(led,255,0,0)
 light.lightbrightness(led,50)
 ```
 
-For more detailed usage examples and documentation, please refer to the [project wiki](https://github.com/yourusername/room-light-controller/wiki).
+For more detailed usage examples and documentation, please refer to the source code itself (there isnt a wiki yet).
 
 ## Contributing
 If you find any issues or have suggestions for improvements, feel free to open an issue or contact me directly. Suggestions and ideas are always welcome!
