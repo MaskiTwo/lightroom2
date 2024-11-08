@@ -1,9 +1,7 @@
-from dotenv import load_dotenv
-import os
+import secretkeys as keys
 
 def main():
-    print(f"hello world {os.getenv('key')}")
+    print(f"{keys.secretkey}")
 
 if __name__ == "__main__":
-    load_dotenv()
     main()
