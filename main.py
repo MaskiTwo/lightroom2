@@ -3,15 +3,13 @@ from modules import udphandle as light
 import time
 
 def main():
-    bulb = light.data(keys.bulb_ip,keys.port,"main_bulb")
-    led = light.data(keys.led_ip,keys.port,"main_led")
-    
-    for x in range(1,4):
-        light.lighton(led)
-        time.sleep(0.1)
-        light.lightoff(led)
-        print(x)
-        time.sleep(0.1)
+    bulb = light.lightdata(keys.bulb_ip,keys.port,"main_bulb")
+    led = light.lightdata(keys.led_ip,keys.port,"main_led")
+
+
+    light.lightwhite(led,255,0,False)
+    light.lightbrightness(led,100,False)
+    light.lightoff(led)
     
 
 if __name__ == "__main__":
