@@ -15,7 +15,7 @@ To use the Room Light Controller, follow these steps:
 
 1. Clone the repository:
    ```
-   [git clone https://github.com/MaskiTwo/lightroom2.git]
+   git clone https://github.com/MaskiTwo/lightroom2.git
    ```
 2. Change to the project directory:
    ```
